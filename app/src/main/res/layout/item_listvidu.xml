@@ -12,7 +12,7 @@
 
         <TextView
             android:id="@+id/tv_ngonngu"
-            android:layout_width="50dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:hint="số 1"
             android:textSize="25dp" />

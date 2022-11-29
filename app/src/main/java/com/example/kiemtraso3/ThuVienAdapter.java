@@ -36,8 +36,9 @@ public class ThuVienAdapter extends ArrayAdapter<ThuVien> {
         LayoutInflater inflater = this.activity.getLayoutInflater();
         View view = inflater.inflate(this.resource, null);
 
-        EditText edtso2 = view.findViewById(R.id.tv_vidu);
-        TextView tvname = view.findViewById(R.id.tv_name);
+        TextView tvname = view.findViewById(R.id.tv_ngonngu);
+        TextView edtso2 = view.findViewById(R.id.tv_vidu);
+
 
         ThuVien thuVien = this.objects.get(position) ;
         tvname.setText(thuVien.getTenNgonNgu());

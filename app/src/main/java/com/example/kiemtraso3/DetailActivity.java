@@ -94,7 +94,7 @@ public class DetailActivity extends AppCompatActivity {
     }
     private  void getData(){
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("QuanLyTinhToan");
+        DatabaseReference myRef = database.getReference("QuanLyNgonNgu");
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

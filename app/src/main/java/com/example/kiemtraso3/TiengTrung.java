@@ -90,12 +90,12 @@ public class TiengTrung extends AppCompatActivity {
     private void addControls() {
         txtNgonNgu = findViewById(R.id.tv_name);
         edtVidu = findViewById(R.id.tv_vidu);
-
+        btnThoat = findViewById(R.id.btnBack);
         btnThem = findViewById(R.id.btnLuu);
     }
     private  void getData(){
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("QuanLyTinhToan");
+        DatabaseReference myRef = database.getReference("QuanLyNgonNgu");
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
